@@ -1,0 +1,291 @@
+/* top ribbbon */
+.top-ribbon{
+    background-color:rgb(0, 99, 99);
+    color: white;
+    font-size: 1em;
+    padding: 0.3em 0 0.3em 0;
+}
+.top-ribbon a{
+    padding: 0 0.7em 0 0.7em;
+    color: white;
+    
+}
+
+.top-ribbon a:hover,
+.top-ribbon a:focus,
+.top-ribbon a:active{
+    color: rgb(118, 197, 197);    
+}
+
+/* navbar */
+.navbar .nav li a{
+    color: gray;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li > a:active,{
+    color: rgb(0, 99, 99);
+    background-color: white;
+}
+
+.navbar-toggle span{
+    border: solid rgb(0, 99, 99) 0.2em;
+}
+
+.navbar-nav > .active > a{
+    color: rgb(0, 99, 99);
+    background-color: white;
+}
+
+.navbar-brand img{
+    width: 11em;
+    height: 3em;
+}
+
+.navbar-nav{
+    padding-top: 1.2em;
+}
+
+/* banner */
+#banner{
+     color: white;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding: 6em 2em 6em 2em;
+}
+
+#banner h1{
+    font-weight: 900;
+}
+
+#banner .btn{
+    margin-left: 1.5em;
+     background-color:rgb(0, 99, 99);
+     border: none;
+     padding: 0.8em;
+
+}
+#banner .btn:hover,
+#banner .btn:focus,
+#banner .btn:active{
+     background-color:rgb(0, 150, 150);
+}
+
+/* snippets and news */
+#snippets > .row > .col-md-4 > h5, .sub-content > h5{
+    display: inline;
+    font-weight: 600;
+}
+
+#snippets > .row > .col-md-4 > span, .sub-content > span{
+    display: inline;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: rgb(0, 99, 99);
+}
+
+#snippets{
+    padding: 4em 6em 4em 6em;
+   background-color: gainsboro;
+}
+
+
+
+.item img{
+    width: 100%;
+}
+
+.snippet > .item{
+    background-color: white;
+    margin-top: 0.5em;
+}
+
+.content{
+    padding: 1.5em;
+}
+
+.content h4{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.content p{
+    font-size: 0.9em;
+    color: gray;
+}
+
+.content > a, #box2 > a, #box3 > a{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(0, 99, 99);
+}
+
+.content > a:hover,
+.content > a:focus,
+#box2 > a:hover,
+#box2 > a:focus,
+#box3 > a:hover,
+#box3 > a:focus{
+    font-weight: 800;
+}
+
+.news-item{
+    padding: 0.7em 2em 0.7em 2em;
+}
+
+
+.news > .title{
+    background-color: rgb(0, 99, 99);
+    color: white;
+    width: 100%;
+    margin-right: 0;
+    
+}
+
+.news{
+    background-color: white;
+    padding: 0;
+    
+}
+
+.news-item > hr{
+    margin: 2em 0 0 0;
+}
+
+.news-item > a{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: rgb(0, 99, 99);
+}
+.news-item > a:hover,
+.news-item > a:focus,
+.news-item > a:active{
+    font-weight: 800;
+}
+
+.news-item h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* quote */
+#quote{
+    background-image: url("../images/light_circle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 4em;
+    text-align: center;
+    color: white;     
+}
+
+#quote > blockquote{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+/* featured */
+.featured{
+  background-color:gainsboro;
+  padding: 4em 6em 4em 6em;
+}
+
+.categories > .col-md-4 > img{
+    width: 100%;
+}
+
+.categories{
+    padding-top: 1em;
+}
+
+.categories > .col-md-4 > .content{
+    background-color: white;
+}
+
+.categories > .col-md-4 > .content > a{
+    color: white;
+    border: none;
+    background-color:rgb(0, 99, 99);
+}
+
+.you-tube{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.you-tube > .col-md-5{
+    padding: 4em;
+    background-color: white;
+
+}
+
+
+.social > a{
+    margin-right: 1em;
+    font-size: 1.4em;
+    color: rgb(0, 99, 99);
+}
+.social > a:hover,
+.social > a:focus,
+.social > a:active{
+    color: rgb(1, 37, 37);
+}
+
+.you-tube > .col-md-5 > p{
+    margin-bottom: 4em;
+}
+
+.you-tube > .col-md-7 > iframe{
+    width: 100%;
+    height: 28em;
+}
+
+.box{
+    background-color: white;
+    padding: 2em;
+    width: 32%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#box1 > .sub-content, #box1 > h4, #box1 > p{
+    margin-bottom: 2em;
+}
+
+#box1 > a{
+    background-color: rgb(0, 99, 99);
+    border: none;
+}
+
+
+
+.date{
+    background-color: rgb(0, 99, 99);
+    color: white;
+    text-align: center;
+    
+}
+
+#box2 > .sub-content, .date{
+    margin-bottom: 2em;
+}
+
+#box2{
+    padding-bottom: 1.2em;
+    padding-left: 3em;
+}
+
+.date + .col-md-9{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+#box3 > img{
+    width:96%;
+    margin: auto;
+    margin-top: 2em;
+    height: 12em;
+}
