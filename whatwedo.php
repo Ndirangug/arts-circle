@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,23 +23,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <h2>The Arts Circle</h2>
                 </a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="about.php">About Us</a>
                     </li>
                     <li>
-                        <a href="whatwedo.html">What We Do</a>
+                        <a href="whatwedo.php">What We Do</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.php">Contact Us</a>
                     </li>
                 </ul>
     
@@ -46,8 +47,10 @@
         </div>
     </nav>
     <div class="container-fluid" id="description">
+        <cms:editable type='richtext' name='whatwedo' label='What We do Banner' >
         <h2>What We Do</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ad qui ducimus quia iste nostrum eveniet voluptate. Vel assumenda consectetur blanditiis ut, dignissimos, ratione incidunt cupiditate eum, praesentium nisi iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat? Dolore esse reiciendis et ipsam dolor magni tempora, eveniet repellat sequi incidunt maiores veritatis recusandae, illo nemo nobis? At, dolor.</p>
+        </cms:editable>
     </div>
 
     <!-- services  -->
@@ -60,7 +63,7 @@
         </li>
         
     </ul>
-    
+    <cms:editable type='richtext' name='products' label='Products and Services'>
     <div class="tab-content">
         <div id="services" class="tab-pane fade in active">
             <div class="row">
@@ -149,7 +152,7 @@
                
             </div>
         </div>
-       
+    </cms:editable>
     </div>
 
 
@@ -165,3 +168,4 @@
    
 </body>
 </html>
+<?php COUCH::invoke(); ?>

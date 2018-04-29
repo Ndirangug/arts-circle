@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,23 +24,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <h2>The Arts Circle</h2>
                 </a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="about.php">About Us</a>
                     </li>
                     <li>
-                        <a href="whatwedo.html">What We Do</a>
+                        <a href="whatwedo.php">What We Do</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.php">Contact Us</a>
                     </li>
                 </ul>
     
@@ -49,8 +50,10 @@
 
     <div class="container-fluid text-center" id="about">
         <div class="about-content">
+            <cms:editable type='richtext' name='aboutdescription' label='About Banner'>
             <h2>About Us</h2>
              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam facere, aliquam nam saepe rerum voluptate temporibus sequi fuga quisquam excepturi cumque exercitationem, accusamus doloremque, aliquid voluptatem architecto? Vitae, laboriosam dignissimos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quis sequi. Incidunt aspernatur quidem quisquam, reprehenderit culpa magni in aperiam adipisci molestias inventore, earum quo repellendus, veniam rerum dolorum omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ut tempore eos, consequuntur qui repellendus sunt nisi perferendis voluptas quo incidunt ipsa id architecto suscipit harum nobis aut, consectetur reiciendis!Learn more about <a href="whatwedo.html">what we do</a></p>
+            </cms:editable>
              <h5 class="text-center"><a class="btn btn-primary" href="whatwedo.html">LEARN MORE <i class="fa fa-chevron-right"></i></a></h5>
         </div>
     </div>
@@ -62,6 +65,7 @@
             <div class="col-md-3">
                 <div class="img-circle">
                     <div class="profile img-circle text-center">
+                        <cms:editable type='richtext' name='person1' label='Person 1' >
                         <h4>George Ndirangu</h4>
                         <h6>IT Guy</h6>
                         <span class="profile-social">
@@ -72,11 +76,13 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore perferendis optio quod nobis aliquam unde atque exercitationem necessitatibus, cupiditate.</p>
                     </div>
+                    </cms:editable>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="img-circle">
                     <div class="profile img-circle text-center">
+                        <cms:editable type='richtext' name='person2' label='Person 2' >
                         <h4>George Ndirangu</h4>
                         <h6>IT Guy</h6>
                         <span class="profile-social">
@@ -87,11 +93,13 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore perferendis optio quod nobis aliquam unde atque exercitationem necessitatibus, cupiditate.</p>
                     </div>
+                </cms:editable>
                 </div>
             </div>
            <div class="col-md-3">
                 <div class="img-circle">
                     <div class="profile img-circle text-center">
+                        <cms:editable type='richtext' name='person3' label='Person 3' >
                         <h4>George Ndirangu</h4>
                         <h6>IT Guy</h6>
                         <span class="profile-social">
@@ -102,11 +110,13 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore perferendis optio quod nobis aliquam unde atque exercitationem necessitatibus, cupiditate.</p>
                     </div>
+                </cms:editable>
                 </div>
             </div>
            <div class="col-md-3">
                 <div class="img-circle">
                     <div class="profile img-circle text-center">
+                        <cms:editable type='richtext' name='person4' label='Person 4' >
                         <h4>George Ndirangu</h4>
                         <h6>IT Guy</h6>
                         <span class="profile-social">
@@ -117,6 +127,7 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore perferendis optio quod nobis aliquam unde atque exercitationem necessitatibus, cupiditate.</p>
                     </div>
+                </cms:editable>
                 </div>
             </div>
         </div>
@@ -154,3 +165,4 @@
     </script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

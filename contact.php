@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,23 +23,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <h2>The Arts Circle</h2>
                 </a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="about.php">About Us</a>
                     </li>
                     <li>
-                        <a href="whatwedo.html">What We Do</a>
+                        <a href="whatwedo.php">What We Do</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.php">Contact Us</a>
                     </li>
                 </ul>
     
@@ -49,6 +50,7 @@
         <h1 class="text-center">Contact us</h1>
         <p class="text-center">Got any feedback, complaint or suggestion? We'd love to hear what you have to say to us. Reach out to us either via the contact form below or the contacts on the left pane</p>
         <!-- contacts -->
+        <cms:editable type='richtext' name='contatcs' label='Contacts'>
         <div class="container">
             <div class="row">
                 <div class="col-md-5 text-center contacts">
@@ -76,6 +78,7 @@
                             <h5><i class="fa fa-envelope"></i> info@artscircle.co.ke</h5>
                         </div>
                     </div>
+                </cms:editable>
                     <div class="row">
                         <div class="col-md-12">
                             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31918.542540659684!2d36.356411599999994!3d0.0287635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1524935307602" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -115,3 +118,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

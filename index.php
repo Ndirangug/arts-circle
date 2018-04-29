@@ -108,13 +108,13 @@
                     <hr>
                 </div>
                  <div class="news-item">
-                    <h6><i class="fa fa-circle"></i> December 25th 2017</h6>
-                    <h5>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</h5>
+                    <h6><i class="fa fa-circle"></i><cms:editable type='text' name='date3' label='News3 Date'> December 25th 2017</cms:editable></h6>
+                    <h5><cms:editable type='text' name='news3' label='News3 Content'>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</cms:editable></h5>
                     <hr>
                 </div>
                  <div class="news-item">
-                    <h6><i class="fa fa-circle"></i> December 25th 2017</h6>
-                    <h5>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</h5>
+                    <h6><i class="fa fa-circle"></i><cms:editable type='text' name='date4' label='News4 Date'> December 25th 2017</cms:editable></h6>
+                    <h5><cms:editable type='text' name='news4' label='News4 Content'>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</cms:editable></h5>
                     <hr>
                 </div>
                 <div class="news-item">
@@ -135,47 +135,47 @@
         </div>
         <div class="row categories">
             <div class="col-md-4">
-                <img src="images/photography.jpg" alt="photography pic">
+                <img src="<cms:editable type='image' label='Feature1 Image' name='feature1image'/>" alt="photography pic">
                      <div class="content">
-                        <h4>Visual Arts</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusantiu</p>
+                        <h4><cms:editable type='text' name='feature1title' label='Feature1 Title'>Visual Arts</cms:editable></h4>
+                        <p><cms:editable type='richtext' name='feature1content' label='Feature1 Content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusantiu</cms:editable></p>
                         <a class="btn btn-primary" href="#">LEARN MORE <i class="fa fa-chevron-right"></i></a>
                     </div>
             </div>
              <div class="col-md-4">
-                <img src="images/photography.jpg" alt="photography pic">
+                <img src="<cms:editable type='image' label='Feature2 Image' name='feature2image'/>" alt="photography pic">
                      <div class="content">
-                        <h4>Perorming Arts</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusanti.</p>
+                        <h4><cms:editable type='text' name='feature2title' label='Feature2 Title'>Perorming Arts</cms:editable></h4>
+                        <p><cms:editable type='richtext' name='feature2content' label='Feature2 Content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusanti.</cms:editable></p>
                         <a class="btn btn-primary" href="#">LEARN MORE <i class="fa fa-chevron-right"></i></a>
                     </div>
             </div>
              <div class="col-md-4">
-                <img src="images/photography.jpg" alt="photography pic">
+                <img src="<cms:editable type='image' label='Feature3 Image' name='feature3image'/>" alt="photography pic">
                      <div class="content">
-                        <h4>Digital Arts</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusanti.</p>
+                        <h4><cms:editable type='text' name='feature3title' label='Feature3 Title'>Digital Arts</cms:editable></h4>
+                        <p><cms:editable type='richtext' name='feature3content' label='Feature3 Content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusanti.</cms:editable></p>
                         <a class="btn btn-primary" href="#">LEARN MORE <i class="fa fa-chevron-right"></i></a>
                     </div>
             </div>
         </div>
         <div class="row you-tube">
             <div class="col-md-7">
-                <iframe src="https://www.youtube.com/embed/gmZt9mnx_I8" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+                <iframe src="<cms:editable type='text' name='youtubeembed' label='Youtube embed URL'>https://www.youtube.com/embed/gmZt9mnx_I8</cms:editable>" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
             </div>
             <div class="col-md-5">
                 <div class="sub-content">
                     <span>|</span>
-                    <h5>DUMMY DUMMY CONTENT </h5>
+                    <h5><cms:editable name='youtubetitle' type='text' label='Youtube Video Title'>DUMMY DUMMY CONTENT</cms:editable> </h5>
                 </div>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, veniam itaque excepturi iste adipisci omnis. Deserunt molestias voluptates sunt quasi, non laboriosam necessitatibus quo soluta ad incidunt adipisci dolore sit.</p>
+                <h3><cms:editable name='youtubesubtitle' type='text' label='Youtube Video Description'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</cms:editable></h3>
+                <p><cms:editable name='youtubesummary' type='richtext' label='Youtube Video Summary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, veniam itaque excepturi iste adipisci omnis. Deserunt molestias voluptates sunt quasi, non laboriosam necessitatibus quo soluta ad incidunt adipisci dolore sit.</cms:editable></p>
                 <span class="social">
-                   <a href="#"> <i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                   <a href="<cms:editable name='facebook' type='text' label='FaceBook Url'>#</cms:editable>"> <i class="fab fa-facebook"></i></a>
+                    <a href="<cms:editable name='twitter' type='text' label='Twitter Url'>#</cms:editable>"><i class="fab fa-twitter"></i></a>
+                    <a href="<cms:editable name='instagram' type='text' label='Instagram Url'>#</cms:editable>"><i class="fab fa-instagram"></i></a>
+                    <a href="<cms:editable name='pinterest' type='text' label='Pinterest Url'>#</cms:editable>"><i class="fab fa-pinterest"></i></a>
+                    <a href="<cms:editable name='whatsapp' type='text' label='Whatsapp Url'>#</cms:editable>"><i class="fab fa-whatsapp"></i></a>
                 </span>
             </div>
         </div>
@@ -183,18 +183,22 @@
             <div class="col-md-4 box" id="box1">
                 <div class="sub-content">
                     <span>|</span>
+                    <cms:editable type='richtext' name='somecontent' label='Bottom Atrice' >
                     <h5>DUMMY DUMMY CONTENT </h5>
                 </div>
                  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deleniti est unde quae adipisci. .</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aut recusandae perspiciatis, natus perferendis obcaecati, qui veritatis aperiam quo consequatur, repellendus modi blanditiis. Autem enim similique dolores modi, recusandae sed?</p>
+                </cms:editable>
                 <a class="btn btn-primary" href="#">REQUEST INFORMATION <i class="fa fa-chevron-right"></i></a>
             </div>
+            
             <div class="col-md-4 box" id="box2">
                 <div class="sub-content">
                     <span>|</span>   
                     <h5>UPCOMING EVENTS </h5>
                 </div>
                 <div class="row">
+                <cms:editable type='richtext' name='event1' label='Event1' >
                         <div class="col-md-3 date">
                             <h1>10</h1>
                             <h6>AUG_2018</h6>
@@ -203,8 +207,10 @@
                             <h5><i class="fa fa-clock"></i> 8.00am to 1.30pm</h5>
                             <h5>Exhibition</h5>
                         </div>
+                 </cms:editable>       
                  </div>
                   <div class="row">
+                  <cms:editable type='richtext' name='event2' label='Event2' >
                         <div class="col-md-3 date">
                             <h1>10</h1>
                             <h6>AUG_2018</h6>
@@ -213,6 +219,7 @@
                             <h5><i class="fa fa-clock"></i> 8.00am to 1.30pm</h5>
                             <h5>Exhibition</h5>
                         </div>
+                    </cms:editable>
                  </div>
 
                  <a href="#">SEE ALL EVENTS <i class="fa fa-chevron-right"></i></a>
@@ -221,18 +228,20 @@
             <div class="col-md-4 box" id="box3">
                 <div class="sub-content">
                     <span>|</span>
+                    <cms:editable type='richtext' name='story' label='Footer Story'>
                     <h5>TOP STORIES </h5>
                 </div>
                 <img src="images/abstact.jpg" alt="top stories">
                 <h6>December 16th 2016</h6>
                 <h5>This is just some dummy text, you dummy</h5>
+                </cms:editable>
                 <a href="#">READ MORE <i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
     </div>
     <div class="container-fluid" id="footer">
         <img src="images/logo_transparent.png" alt="LOGO">
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex consequatur minus sunt qui! Obcaecati atque, iste tempora quasi perferendis ullam itaque aspernatur porro neque ipsam nemo? Pariatur, exercitationem iste!</p>
+        <p class="text-center"><cms:editable type='richtext' name='footertext' label='Footer Text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex consequatur minus sunt qui! Obcaecati atque, iste tempora quasi perferendis ullam itaque aspernatur porro neque ipsam nemo? Pariatur, exercitationem iste!</cms:editable></p>
         <form action="#" method="POST" role="form" class="form-inline">
             <div class="form-group">
                 <input class="form-control" type="email" name="email" placeholder="email" id="">
