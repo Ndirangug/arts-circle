@@ -1,3 +1,4 @@
+<?php require_once( 'couch/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,7 @@
     
     <!-- top ribbon -->
     <div class="container-fluid top-ribbon text-center">
-        <a href="#"><i class="fab fa-whatsapp"></i> +254787226306</a>
+        <a href="#"><i class="fab fa-whatsapp"></i><cms:editable name='whatsapp_no' label='Whatsapp Number' type='text'> +254787226306</cms:editable></a>
     </div>
 
     <!-- main navbar collapsible -->
@@ -32,21 +33,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/home_logo.png" alt="The Arts Circle Logo"></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/home_logo.png" alt="The Arts Circle Logo"></a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="mainNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About Us</a>
+                            <a href="about.php">About Us</a>
                         </li>
                         <li>
-                            <a href="whatwedo.html">What We Do</a>
+                            <a href="whatwedo.php">What We Do</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="contact.php">Contact Us</a>
                         </li>
                     </ul>
                    
@@ -60,9 +61,9 @@
         <div class="container">
             <h1>ALL CREATIVES UNDER ONE ROOF</h1>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestiae enim maiores, sed et officia ipsa doloribus<br/> odit facere beatae voluptas eum quos culpa minus illo neque cum repudiandae consequuntur Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit. </p>
+            <p><cms:editable name='home_desc' label='Home Banner Description' type='richtext' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestiae enim maiores, sed et officia ipsa doloribus<br/> odit facere beatae voluptas eum quos culpa minus illo neque cum repudiandae consequuntur Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit.</cms:editable> </p>
             <br>
-            <a class="btn btn-primary" href="#">FIND A CREATIVE</a>
+            <a class="btn btn-primary" href="#">FIND A CREATIVE</a> <!-- TODO:execute this -->
             <a class="btn btn-primary" href="#">JOIN US</a> 
        </div>
     </div>
@@ -71,23 +72,23 @@
     <div class="container-fluid" id="snippets">
         <div class="row">
             <div class="col-md-4 snippet">
-                <span>| </span> <h5> MENTORSHIP</h5> 
+                <span>| </span> <h5><cms:editable type='text' name='item1label' label='Item 1 Label' > MENTORSHIP </cms:editable> </h5> 
                 <div class="item">
-                    <img src="images/photography.jpg" alt="photography pic">
+                    <img src="<cms:editable type='image' name='item1image' label='Item1 Image' />" alt="photography pic">
                      <div class="content">
-                        <h4>Get Industry Exposure</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusantium, iste nisi, amet officia porro tenetur quisquam, numquam voluptatibus dolorem necessitatibus harum.</p>
+                        <h4><cms:editable name='item1title' label='Item 1 title' type='text'>Get Industry Exposure</cms:editable></h4>
+                        <p><cms:editable name='item1content' type='richtext' label='Item 1 Content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusantium, iste nisi, amet officia porro tenetur quisquam, numquam voluptatibus dolorem necessitatibus harum.</cms:editable> </p>
                         <a href="#">READ MORE <i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 snippet">
-                <span>| </span> <h5> COMMUNITY OF CREATIVES</h5> 
+                <span>| </span> <h5><cms:editable type='text' label='Item2 Label' name='item2label'> COMMUNITY OF CREATIVES</cms:editable></h5> 
                  <div class="item">
-                    <img src="images/photography.jpg" alt="photography pic">
+                    <img src="<cms:editable type='image' label='Item2 Image' name='item2image'/>" alt="photography pic">
                     <div class="content">
-                        <h4>Get Industry Exposure</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusantium, iste nisi, amet officia porro tenetur quisquam, numquam voluptatibus dolorem necessitatibus harum.</p>
+                        <h4><cms:editable type='text' name='item2title' label='Item2 Title' >Get Industry Exposure</cms:editable></h4>
+                        <p><cms:editable type='richtext' name='item2content' label='Item2 Content' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam molestiae eligendi et inventore nemo quo recusandae accusantium, iste nisi, amet officia porro tenetur quisquam, numquam voluptatibus dolorem necessitatibus harum.</cms:editable></p>
                         <a href="#">READ MORE <i class="fa fa-chevron-right"></i></a>
                     </div>
                 </div>
@@ -97,13 +98,13 @@
                     <h4>NEWS</h4>
                 </div>
                 <div class="news-item">
-                    <h6><i class="fa fa-circle"></i> December 25th 2017</h6>
-                    <h5>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</h5>
+                    <h6><i class="fa fa-circle"></i><cms:editable type='text' name='date1' label='News1 Date'> December 25th 2017</cms:editable></h6>
+                    <h5><cms:editable type='text' name='news1' label='News1 Headline'>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</cms:editable></h5>
                     <hr>
                 </div>
                  <div class="news-item">
-                    <h6><i class="fa fa-circle"></i> December 25th 2017</h6>
-                    <h5>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</h5>
+                    <h6><i class="fa fa-circle"></i><cms:editable type='text' name='date2' label='News2 Date'> December 25th 2017</cms:editable></h6>
+                    <h5><cms:editable type='text'name='news2' label='News2 Headline'>THIS IS  NEWS HEADLINE THIS IS A NEWS HEADLINE</cms:editable></h5>
                     <hr>
                 </div>
                  <div class="news-item">
@@ -248,3 +249,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<?php COUCH::invoke(); ?>
